@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito', sans-serif;
+}
+/* header styling*/
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    background-color:white;
+}
+
+/*carousel styling*/
+.carousel {
+    top: 0;
+    left:0;
+}
+/*.carousel::after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(0,0,0, 0.6);
+}*/
+.carousel .carousel-inner .carousel-item img{
+    width: 100% !important;
+    height: 100vh;
+    filter: blur(5px);
+    backdrop-filter: brightness(30%);
+}
+.carousel .carousel-inner .carousel-item .carousel-caption   {
+    position: absolute;
+    top: 20%;
+    font-size: xx-large;
+    backdrop-filter: blur(20px);
+    backdrop-filter: brightness(80%);
+    height: 500px;
+    border-radius: 10px;
+}
+.carousel-caption p {
+    font-weight:lighter;
+    color: white;
+    
+}
+.carousel-caption h1 {
+    font-weight: 900;
+    font-size: 75px;
+    color:white;
+}
+
+/*all buttons styling*/
+.btn {
+    background-color: rgb(11, 122, 150);
+    border:0px;
+    color:white;
+    margin: 2rem auto;
+    box-shadow: 2px 2px 8px 4px rgba(0, 0,0, 0.3),
+                1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.btn:hover {
+    background-color:rgb(77, 169, 250);
+    border: 0px;
+    color:beige;
+}
+
+/*all articles and content styling*/
+article {
+    margin: 2rem auto 0rem auto;
+    padding: 1rem;
+    min-height: 50vh;
+}
+article h1 {
+    font-weight: 800;
+    font-size: 47px;
+}
+article p {
+    font-weight: 200;
+    font-size: 24px;
+}
+
+/*link elements*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+/*cards*/
+.card{
+    border: 0px;
+    border-radius: 10px;
+    background-color:rgb(231, 237, 245);
+}
+
+.card:hover {
+    transform: scale(1.01);
+    
+}
+.wy {
+    font-weight: 800;
+    font-size: large;
+}
+
+#getstarted {
+    background-color: rgb(15, 157, 192);
+    color: white;
+}
+
+#getstarted h4{
+    font-weight: 300;
+}
+/*footer styling*/
+footer{
+    background-color: rgb(7, 82, 100);
+    padding: 3rem 1rem  ;
+    margin-top: 0px;
+    min-height: 30vh;
+    color: white;
+}
+
+footer h3{
+    font-weight: 800;
+}
+
+footer p{
+    font-weight: 200;
+}
+
+footer ul {
+    list-style-type: none;
+    font-weight: 200;
+}
+
+/**/
+.csd {
+    position: relative;
+    top:-15px;
+    left: 25px;
+    background-color: rgb(11, 122, 150);
+    width: 80px;
+    padding: 16px;
+    border-radius: 7px;
+}
+.csd img {
+    height: 50px;
+    width: 50px;
+}
+i {
+    font-size: 35px;
+    color: rgb(11, 122, 150);
+}
