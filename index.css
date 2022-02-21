@@ -54,26 +54,36 @@ body{
     font-size: 75px;
     color:white;
 }
+.carousel-caption button {
+    background-color: hsl(190, 82%, 19%);
+    color: white;
+}
+.carousel-caption button:hover {
+    background-color: hsl(190, 82%, 38%);
+    color: white;
+} 
 
 /*all buttons styling*/
 .btn {
-    background-color: rgb(11, 122, 150);
+    background-color: hsl(190, 82%, 19%);
     border:0px;
     color:white;
+    font-weight: 700;
     margin: 2rem auto;
-    box-shadow: 2px 2px 8px 4px rgba(0, 0,0, 0.3),
+    box-shadow: 2px 2px 8px 4px rgba(0, 0,0, 0.2),
                 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
 }
 .btn:hover {
-    background-color:rgb(77, 169, 250);
+    background-color:hsl(190, 82%, 38%);
     border: 0px;
     color:beige;
+    transition: 2sec;
 }
 
 /*all articles and content styling*/
 article {
-    margin: 2rem auto 0rem auto;
-    padding: 1rem;
+    /*margin: 2rem 3rem 0rem 3rem;*/
+    padding: 1rem 3rem;
     min-height: 50vh;
 }
 article h1 {
@@ -94,34 +104,65 @@ a{
 a:hover {
     color: black;
 }
+/*services article*/
+#services {
+    background-color:hsl(0, 7%, 95%);
+}
+#services p {
+    color: hsl(190, 96%, 10%);
+}
 
 /*cards*/
 .card{
+    margin: 1.5rem;
     border: 0px;
+    height: 300px;
+    padding-left: 1em 2em 2em 2em;
     border-radius: 10px;
-    background-color:rgb(231, 237, 245);
+    background-color:white;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1),
+                -3px -3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
     transform: scale(1.01);
+    transform: translateY(-3px);
+    transition-duration: 0.3s;
+    transition-timing-function:ease-in-out ;
     
 }
+.card p {
+    color: hsl(190, 96%, 10%);
+    font-weight: 300;
+    font-size:20px;
+}
+
 .wy {
     font-weight: 800;
     font-size: large;
 }
 
 #getstarted {
-    background-color: rgb(15, 157, 192);
+    background-color: hsl(190, 84%, 19%);
     color: white;
 }
 
 #getstarted h4{
     font-weight: 300;
 }
+#getstarted button {
+    background-color:hsl(190, 82%, 19%);
+    color: white;
+    font-weight: 700;
+}
+#getstarted button:hover {
+    background-color:hsl(190, 82%, 38%);
+    color:white;
+}
+
 /*footer styling*/
 footer{
-    background-color: rgb(7, 82, 100);
+    background-color: hsl(190, 89%, 10%);
     padding: 3rem 1rem  ;
     margin-top: 0px;
     min-height: 30vh;
@@ -133,12 +174,19 @@ footer h3{
 }
 
 footer p{
-    font-weight: 200;
+    font-weight: 300;
 }
 
 footer ul {
     list-style-type: none;
     font-weight: 200;
+}
+footer a {
+    color: white;
+}
+footer a:hover {
+    color: rgb(15, 157, 192);
+    
 }
 
 /**/
@@ -146,16 +194,23 @@ footer ul {
     position: relative;
     top:-15px;
     left: 25px;
-    background-color: rgb(11, 122, 150);
-    width: 80px;
-    padding: 16px;
-    border-radius: 7px;
+    background-color: hsl(190, 83%, 19%);
+    width: 75px;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 5px 5px hsla(0, 0%, 0%, 0.2),
+                0px 3px 5px hsla(0, 0%, 0%, 0.1)
 }
-.csd img {
-    height: 50px;
-    width: 50px;
+.csd i {
+    font-weight: 900; 
+    font-size: 40px;
+    color: white;
+    
 }
+
 i {
-    font-size: 35px;
-    color: rgb(11, 122, 150);
+    font-size: 40px;
+    color: hsl(190, 84%, 19%);
+    font-weight: 900;
 }
