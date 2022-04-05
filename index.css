@@ -1,20 +1,34 @@
 * {
     box-sizing: border-box;
-    margin: 0px;
     padding: 0px;
     font-family: 'Nunito', sans-serif;
 }
 /* header styling*/
 header {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    /*modifications*/
+   /* background-image: url(images/dasci1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;*/
+
 }
 
-body{
-    background-color:white;
-}
+/*header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0, 0.6);
+}*/
 
 /*carousel styling*/
+
 .carousel {
     top: 0;
     left:0;
@@ -29,11 +43,12 @@ body{
     z-index: 1;
     background: rgba(0,0,0, 0.6);
 }*/
+
 .carousel .carousel-inner .carousel-item img{
     width: 100% !important;
     height: 100vh;
-    filter: blur(5px);
-    backdrop-filter: brightness(30%);
+    filter: blur(4px);
+
 }
 .carousel .carousel-inner .carousel-item .carousel-caption   {
     position: absolute;
@@ -43,6 +58,8 @@ body{
     backdrop-filter: brightness(80%);
     height: 500px;
     border-radius: 10px;
+    background: hsla(195, 82%, 15%, 0.4);
+    
 }
 .carousel-caption p {
     font-weight:lighter;
@@ -81,16 +98,11 @@ body{
 }
 
 /*all articles and content styling*/
-article {
-    /*margin: 2rem 3rem 0rem 3rem;*/
-    padding: 1rem 3rem;
-    min-height: 50vh;
-}
-article h1 {
+section h1 {
     font-weight: 800;
     font-size: 47px;
 }
-article p {
+.page-wrapper section p {
     font-weight: 200;
     font-size: 24px;
 }
@@ -106,34 +118,39 @@ a:hover {
 }
 /*services article*/
 #services {
-    background-color:hsl(0, 7%, 95%);
+    background-color:hsl(0, 0%, 94%);
+    width: 100;
 }
-#services p {
-    color: hsl(190, 96%, 10%);
+.wt {
+    font-weight: 400 !important;
+    color: hsl(184, 9%, 36%);
 }
 
+
+
 /*cards*/
-.card{
+#services .card{
     margin: 1.5rem;
     border: 0px;
     height: 300px;
-    padding-left: 1em 2em 2em 2em;
+    /*add a height for small screens*/
+    padding: 0em 2em 2em 2em;
     border-radius: 10px;
     background-color:white;
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1),
                 -3px -3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.card:hover {
+#services .card:hover {
     transform: scale(1.01);
     transform: translateY(-3px);
     transition-duration: 0.3s;
     transition-timing-function:ease-in-out ;
     
 }
-.card p {
+#services .card p {
     color: hsl(190, 96%, 10%);
-    font-weight: 300;
+    font-weight: 200 !important;
     font-size:20px;
 }
 
@@ -161,11 +178,12 @@ a:hover {
 }
 
 /*footer styling*/
+/*rework element positioning*/
 footer{
     background-color: hsl(190, 89%, 10%);
-    padding: 3rem 1rem  ;
+    padding: 3rem 5rem  ;
     margin-top: 0px;
-    min-height: 30vh;
+    min-height: 50vh;
     color: white;
 }
 
@@ -209,7 +227,7 @@ footer a:hover {
     
 }
 
-i {
+#why i {
     font-size: 40px;
     color: hsl(190, 84%, 19%);
     font-weight: 900;
